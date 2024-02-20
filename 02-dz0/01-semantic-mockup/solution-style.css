@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+}
+
+.body {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: red;
+}
+
+.header-title {
+  padding: 10px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  
+  color: #fff;
+}
+
+.header-nav {
+  padding: 10px;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  
+  background-color: orange;
+}
+
+.header-nav-group {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  
+  text-decoration: underline;
+  
+  list-style-type: none;
+  color: #fff;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.item-link {
+  text-decoration: none;
+  
+  color: inherit;
+}
+
+.main {
+  padding: 10px 10px 20px;
+  
+  background-color: green;
+}
+
+.article {
+  margin-bottom: 10px;
+  padding: 20px;
+  
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  
+  color: #fff;
+  background-color: blue;
+}
+
+.article-last {
+  margin-bottom: 0;
+}
+
+.article-title {
+  margin-bottom: 20px;
+}
+
+.film-group {
+  padding-left: 25px;
+}
+
+.footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  background-color: purple;
+}
+
+.footer-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 32px;
+  
+  color: #fff;
+}
