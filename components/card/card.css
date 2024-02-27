@@ -1,0 +1,24 @@
+.card {
+  width: 350px;
+  min-height: 367px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
+.card__text {
+  margin: 0;
+  
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+  color: var(--black);
+}
