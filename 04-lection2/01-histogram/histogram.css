@@ -1,0 +1,73 @@
+.histogram {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 24px 24px;
+  
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+}
+
+.histogram__header-wrapper {
+  margin-bottom: 39px;
+}
+
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.histogram__title {
+  opacity: 0.8;
+}
+
+.histogram__link {
+  font-family: inherit;
+  text-decoration: none;
+  
+  color: var(--blue);
+}
+
+.histogram__text-typography {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  
+  color: var(--black);
+}
+
+.histogram__data {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.histogram__chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px;
+  width: 100%;
+  height: 50px;
+}
+
+.histogram__chart-column {
+  width: var(--chart-column-width);
+  height: 100%;
+  
+  background-color: var(--blue);
+}
+
+.histogram__chart-column_high {
+  height: 75%;
+}
+
+.histogram__chart-column_middle {
+  height: 50%;
+}
+
+.histogram__chart-column_low {
+  height: 25%;
+}
