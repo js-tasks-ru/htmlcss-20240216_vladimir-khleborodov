@@ -1,7 +1,7 @@
 .button {
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding: 15px 61px 14px;
   
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -21,14 +21,10 @@
 
 .button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
   pointer-events: none;
 }
 
 .button_primary {
-  padding-left: 66px;
-  padding-right: 65px;
-  
   background-color: var(--blue);
 }
 
@@ -37,11 +33,7 @@
 }
 
 .button_secondary {
-  padding-left: 56px;
-  padding-right: 57px;
-  
   background-color: var(--purple);
-  ;
 }
 
 .button_secondary:hover {
@@ -49,9 +41,6 @@
 }
 
 .button_alternate {
-  padding-left: 61px;
-  padding-right: 61px;
-  
   color: var(--grey-4);
   border: 1px solid var(--grey-3);
   background-color: var(--white);
