@@ -1,5 +1,12 @@
 @import '../fonts/fonts.css';
 
+@import "../../components/page/page.css";
+@import "../../components/header/header.css";
+@import "../../components/preview/preview.css";
+@import "../../components/footer/footer.css";
+@import "../../components/container/container.css";
+@import "../../components/card/card.css";
+
 :root {
   --white: #ffffff;
   --black: #212429;
@@ -13,14 +20,19 @@
   --grey-2: #DDE2E5;
   --grey-3: #ACB5BD;
   --grey-4: #495057;
-
+  --grey-5: #F9FAFC;
+  
   --error: var(--red);
   --success: var(--blue);
-
+  
   --primary: var(--blue);
   --secondary: var(--purple);
 }
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
 }
