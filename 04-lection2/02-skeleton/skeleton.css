@@ -1,6 +1,4 @@
 .skeleton {
-  box-sizing: border-box;
-  width: 579px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -16,7 +14,7 @@
   gap: 16px;
 }
 
-.skeleton__item_flex-settings {
+.skeleton__item_column {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -38,6 +36,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex-grow: 1;
 }
 
 .skeleton__line {
@@ -45,14 +44,14 @@
   background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
 }
 
-.skeleton__line-short {
-  width: 172px;
+.skeleton__line_short {
+  width: 43%;
 }
 
-.skeleton__line-middle {
-  width: 257px;
+.skeleton__line_middle {
+  width: 64%;
 }
 
-.skeleton__line-long {
-  width: 515px;
+.skeleton__line_long {
+  width: 100%;
 }
