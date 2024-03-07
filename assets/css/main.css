@@ -17,6 +17,7 @@
   --purple-2: #5028C6;
   --blue: #4263EB;
   --blue-2: #2342C0;
+  --blue-3: #334D6E;
 
   --red: #F03D3E;
   --grey-1: #F8F9FA;
@@ -35,8 +36,6 @@
   
   --primary: var(--blue);
   --secondary: var(--purple);
-
-  --modal-title-color: #334D6E;
 }
 
 * {
