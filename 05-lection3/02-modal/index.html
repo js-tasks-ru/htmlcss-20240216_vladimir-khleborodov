@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <!-- Страница с модалкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
-        <title>Modal</title>
-    </head>
-    <body>
-    </body>
-    <script src="./index.js"></script> 
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./modal.css">
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="modal-window-wrapper" id="modal">
+      <div class="modal-window">
+        <svg class="modal-window__close-icon" id="modal-close" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318
+          3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318
+          3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861
+          11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896
+          3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318
+          12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861
+          4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z"/>
+        </svg>
+        <span class="modal-window__title">Modal title</span>
+        <p class="modal-window__content">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+          sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+          consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+    <button class="button button_primary" id="modal-open">Open modal</button>
+  </body>
+  <script src="./index.js"></script> 
 </html>
