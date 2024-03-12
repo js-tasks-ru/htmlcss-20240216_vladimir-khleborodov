@@ -36,6 +36,8 @@
   
   --primary: var(--blue);
   --secondary: var(--purple);
+  
+  --chart-column-width: 9px;
 }
 
 * {
