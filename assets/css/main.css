@@ -33,13 +33,13 @@
   --grey-9: #C4C4C4;
   --grey-10: #90A0B7;
 
-
-  
   --error: var(--red);
   --success: var(--blue);
   
   --primary: var(--blue);
   --secondary: var(--purple);
+  
+  --chart-column-width: 9px;
 }
 
 * {
