@@ -61,10 +61,6 @@
   padding-bottom: 32px;
 }
 
-.accordion__item[open] .accordion__summary {
-  margin-bottom: 16px;
-}
-
 .accordion__item[open] .accordion__icon {
   transform: rotate(180deg);
 }
