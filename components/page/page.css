@@ -1,5 +1,5 @@
 .page {
-  background-color: var(--red);
+  background-color: var(--grey-5);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,9 @@
 
 .page__main {
   flex-grow: 1;
+}
+
+.page_template {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

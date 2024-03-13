@@ -5,6 +5,13 @@
   background-color: var(--white);
 }
 
+.footer_template {
+  padding-top: 92px;
+  padding-bottom: 56px;
+  
+  background-color: var(--grey-5);
+}
+
 .footer__title {
   margin-top: 0;
   margin-bottom: 32px;
@@ -17,6 +24,15 @@
   text-align: center;
   
   color: var(--black);
+}
+
+.footer__title_template {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: var(--grey-3);
 }
 
 .footer__text {

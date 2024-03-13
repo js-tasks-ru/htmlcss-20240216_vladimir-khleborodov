@@ -5,8 +5,20 @@
   background-color: var(--grey-5);
 }
 
+.preview_padding {
+  padding-top: 36px;
+  padding-bottom: 0;
+}
+
 .preview__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.preview__template {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: max-content;
+  column-gap: 56px;
 }

@@ -1,0 +1,23 @@
+.component-overview {
+  min-height: 746px;
+  padding-top: 32px;
+  padding-left: 48px;
+  
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+}
+
+.component-overview__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  
+  font-family: 'Inter', Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+  color: var(--grey-4);
+}
