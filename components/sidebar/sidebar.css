@@ -16,6 +16,10 @@
   color: var(--black);
 }
 
+.sidebar__menu {
+  margin-bottom: 30px;
+}
+
 .sidebar__item {
   margin-top: 0;
   margin-bottom: 4px;
@@ -33,16 +37,12 @@
 .sidebar__item-link {
   text-decoration: none;
   font-family: inherit;
-
+  
   color: inherit;
 }
 
 .sidebar__item-link:hover {
   color: var(--orange);
-}
-
-.sidebar__item_margin-bottom {
-  margin-bottom: 30px;
 }
 
 .sidebar__item:last-child {

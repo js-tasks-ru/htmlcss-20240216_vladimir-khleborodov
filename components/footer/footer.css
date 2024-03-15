@@ -26,7 +26,7 @@
   color: var(--black);
 }
 
-.footer__title_template {
+.footer_template .footer__title {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.04em;
