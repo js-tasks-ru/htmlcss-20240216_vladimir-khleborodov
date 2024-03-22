@@ -15,8 +15,11 @@
   width: 110px;
 }
 
-.header__logo-img {
-  width: 100%;
+.header__logo-icon {
+  width: 110px;
+  height: 32px;
+  
+  color: var(--black);
 }
 
 .header__title {
