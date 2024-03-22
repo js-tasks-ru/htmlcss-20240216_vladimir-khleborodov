@@ -35,13 +35,9 @@
 
 .accordion__icon {
   width: 18px;
-  height: 10px;
+  height: 16px;
   
-  fill: none;
-  stroke: var(--grey-4);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  color: var(--black);
 }
 
 .accordion__content {
