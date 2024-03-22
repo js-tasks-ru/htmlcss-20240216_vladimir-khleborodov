@@ -1,8 +1,22 @@
 .header {
-  padding-top: 96px;
+  padding-top: 24px;
   padding-bottom: 77px;
   
   background-color: var(--white);
+}
+
+.header__items {
+  display: flex;
+  
+  margin-bottom: 38px;
+}
+
+.header__logo {
+  width: 110px;
+}
+
+.header__logo-img {
+  width: 100%;
 }
 
 .header__title {
