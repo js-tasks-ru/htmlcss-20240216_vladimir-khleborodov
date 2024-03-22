@@ -438,5 +438,18 @@
       10.9024 4.31658 10.9024 4.70711 11.2929L9 15.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071
       5.29289Z" fill="currentColor"/>
     </symbol>
+    
+    <symbol viewBox="0 0 110 32" id="logo-icon">
+      <g clip-path="url(#clip0_17869_61)">
+        <rect y="1" width="30" height="30" fill="currentColor"/>
+        <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+        <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_17869_61">
+          <rect width="110" height="32" fill="white"/>
+        </clipPath>
+      </defs>
+    </symbol>
   </defs>
 </svg>
