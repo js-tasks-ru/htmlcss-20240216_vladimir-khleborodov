@@ -8,7 +8,7 @@
   width: 24px;
   height: 24px;
   
-  fill: var(--black);
+  color: var(--black);
 }
 
 .tooltip__bubble {
