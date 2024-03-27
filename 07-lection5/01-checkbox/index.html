@@ -7,7 +7,29 @@
   </head>
   <body>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox">
+      <input class="checkbox__input" type="checkbox" name="checkbox-name">
+      <div class="checkbox__state">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon">
+            <use href="../../assets/images/icons.svg#checkbox-icon" />
+          </svg>
+        </div>
+        <div class="checkbox__label">Default</div>
+      </div>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox" name="checkbox-name" checked>
+      <div class="checkbox__state">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon">
+            <use href="../../assets/images/icons.svg#checkbox-icon" />
+          </svg>
+        </div>
+        <div class="checkbox__label">Default</div>
+      </div>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox" name="checkbox-name" disabled>
       <div class="checkbox__state">
         <div class="checkbox__control">
           <svg class="checkbox__icon">

@@ -61,18 +61,18 @@
   background-color: var(--blue);
 }
 
-.checkbox__input[disabled] ~ .checkbox__state
+.checkbox__input:disabled ~ .checkbox__state
 .checkbox__control {
   border-color: var(--grey-2);
   background-color: var(--grey-2);
 }
 
-.checkbox__input[disabled] ~ .checkbox__state
+.checkbox__input:disabled ~ .checkbox__state
 .checkbox__icon {
   stroke: var(--grey-2);
 }
 
-.checkbox__input[disabled] ~ .checkbox__state
+.checkbox__input:disabled ~ .checkbox__state
 .checkbox__label {
   text-decoration: none;
   
