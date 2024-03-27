@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+  </head>
+  <body>
+    <label class="input">
+      <span class="input__lable">Label</span>
+      <div class="input__items">
+        <input class="input__textfield" type="text" placeholder="Placeholder">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </label>
+    <label class="input">
+      <span class="input__lable">Focus</span>
+      <div class="input__items">
+        <input class="input__textfield" type="text" placeholder="Placeholder" value="Filled Input">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </label>
+    <label class="input input_success">
+      <span class="input__lable">Success</span>
+      <div class="input__items">
+        <input class="input__textfield" type="text" placeholder="Placeholder" value="Success">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </label>
+    <label class="input input_error">
+      <span class="input__lable">Error</span>
+      <div class="input__items">
+        <input class="input__textfield" type="text" placeholder="Placeholder" value="Error">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </label>
+    <label class="input">
+      <span class="input__lable">Disabled</span>
+      <div class="input__items">
+        <input class="input__textfield" type="text" placeholder="Placeholder" disabled>
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </label>
+  </body>
 </html>
