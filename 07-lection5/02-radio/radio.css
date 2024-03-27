@@ -73,23 +73,23 @@
   color: var(--blue);
 }
 
-.radio__button[disabled] ~ .radio__state
+.radio__button:disabled ~ .radio__state
 .radio__control {
   background-color: var(--grey-2);
   border: var(--grey-2);
 }
 
-.radio__button[disabled] ~ .radio__state
+.radio__button:disabled ~ .radio__state
 .radio__icon-outer {
   color: var(--grey-2);
 }
 
-.radio__button[disabled] ~ .radio__state
+.radio__button:disabled ~ .radio__state
 .radio__icon-inner {
   color: var(--grey-2);
 }
 
-.radio__button[disabled] ~ .radio__state
+.radio__button:disabled ~ .radio__state
 .radio__label {
   text-decoration: none;
   
