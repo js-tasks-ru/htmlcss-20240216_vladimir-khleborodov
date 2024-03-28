@@ -7,6 +7,7 @@
 
 .header__items {
   display: flex;
+  align-items: center;
   
   margin-bottom: 38px;
 }
@@ -33,4 +34,27 @@
   text-align: left;
   
   color: var(--black);
+}
+
+@media screen and (max-width: 1160px) {
+  .header_preview {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header_preview .header__items {
+    justify-content: center;
+    
+    margin-bottom: 48px;
+  }
+  
+  .header_preview .header__title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    
+    color: var(--grey-4);
+  }
 }

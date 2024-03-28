@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header header_preview">
         <div class="container">
           <div class="header__items">
             <div class="header__logo">
@@ -19,31 +19,179 @@
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
-      <main class="preview page__main">
+      <main class="preview page__main preview_main-page">
         <div class="container">
           <div class="preview__cards">
-            <div class="card">
-              <h3 class="card__text">Tooltip</h3>
+            <div class="card card_preview">
+              <div class="card__body">
+                <div class="tooltip tooltip_preview">
+                  <div class="tooltip__trigger">
+                    <svg class="tooltip__icon" viewBox="0 0 24 24">
+                      <use href="../../assets/images/icons.svg#help" />
+                    </svg>
+                  </div>
+                  <div class="tooltip__bubble">Helper Text</div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__text">Tooltip</h3>
+              </div>
             </div>
-            <div class="card">
-              <h3 class="card__text">Custom form elements</h3>
+            <div class="card card_preview">
+              <div class="card__body"></div>
+              <div class="card__footer">
+                <h3 class="card__text">Custom form elements</h3>
+              </div>
             </div>
-            <div class="card">
-              <h3 class="card__text">Calendar</h3>
+            <div class="card card_preview">
+              <div class="card__body">
+                <div class="calendar calendar_preview">
+                  <div class="calendar__title">October 2019</div>
+                  <div class="calendar__wrapper">
+                    <div class="calendar__inner">
+                      <div class="calendar__item calendar__item_day">Mon</div>
+                      <div class="calendar__item calendar__item_day">Tue</div>
+                      <div class="calendar__item calendar__item_day">Wed</div>
+                      <div class="calendar__item calendar__item_day">Thu</div>
+                      <div class="calendar__item calendar__item_day">Fri</div>
+                      <div class="calendar__item calendar__item_day">Sat</div>
+                      <div class="calendar__item calendar__item_day">San</div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item">1</div>
+                      <div class="calendar__item">2</div>
+                      <div class="calendar__item">3</div>
+                      <div class="calendar__item">4</div>
+                      <div class="calendar__item">5</div>
+                      <div class="calendar__item">6</div>
+                      <div class="calendar__item">7</div>
+                      <div class="calendar__item">8</div>
+                      <div class="calendar__item">9</div>
+                      <div class="calendar__item">10</div>
+                      <div class="calendar__item">11</div>
+                      <div class="calendar__item">12</div>
+                      <div class="calendar__item">13</div>
+                      <div class="calendar__item">14</div>
+                      <div class="calendar__item">15</div>
+                      <div class="calendar__item">16</div>
+                      <div class="calendar__item">17</div>
+                      <div class="calendar__item calendar__item_range_start">18</div>
+                      <div class="calendar__item calendar__item_range_middle">19</div>
+                      <div class="calendar__item calendar__item_range_middle">20</div>
+                      <div class="calendar__item calendar__item_range_middle">21</div>
+                      <div class="calendar__item calendar__item_range_middle">22</div>
+                      <div class="calendar__item calendar__item_range_end">23</div>
+                      <div class="calendar__item">24</div>
+                      <div class="calendar__item">25</div>
+                      <div class="calendar__item">26</div>
+                      <div class="calendar__item">27</div>
+                      <div class="calendar__item">28</div>
+                      <div class="calendar__item">29</div>
+                      <div class="calendar__item">30</div>
+                      <div class="calendar__item">31</div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                      <div class="calendar__item"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__text">Calendar</h3>
+              </div>
             </div>
-            <div class="card">
-              <h3 class="card__text">Modal dialog</h3>
+            <div class="card card_preview">
+              <div class="card__body">
+                <div class="modal modal_preview">
+                  <div class="modal__window">
+                    <svg class="modal__close" id="modal-close">
+                      <use href="./assets/images/icons.svg#cross" />
+                    </svg>
+                    <span class="modal__title">Modal title</span>
+                    <p class="modal__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                      sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                      consequat sunt nostrud amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__text">Modal</h3>
+              </div>
             </div>
-            <div class="card">
-              <h3 class="card__text">Histogram</h3>
+            <div class="card card_preview">
+              <div class="card__body">
+                <div class="histogram histogram_preview">
+                  <div class="histogram__header-wrapper">
+                    <div class="histogram__header">
+                      <span class="histogram__title">Total orders</span>
+                      <span class="histogram__item">
+                        <a class="histogram__link" href="#0">View all</a>
+                      </span>
+                    </div>
+                    <span class="histogram__data">50254</span>
+                  </div>
+                  <div class="histogram__chart">
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__text">Histogram</h3>
+              </div>
             </div>
-            <div class="card">
-              <h3 class="card__text">Avatar</h3>
+            <div class="card card_preview">
+              <div class="card__body">
+                <div class="avatar avatar_preview">
+                  <img class="avatar__img" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="аватар">
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__text">Avatar</h3>
+              </div>
             </div>
           </div>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer footer_preview">
         <div class="container">
           <h2 class="footer__title">About</h2>
           <p class="footer__text">This project is a collection of professionally designed,
