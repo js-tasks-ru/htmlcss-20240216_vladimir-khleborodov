@@ -453,7 +453,7 @@
     </symbol>
     
     <symbol viewBox="0 0 15 13" fill="none" id="checkbox-icon">
-      <path d="M1.5 7.5L5 11L13 2"/>
+      <path d="M1.5 7.5L5 11L13 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
   </defs>
 </svg>

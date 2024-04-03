@@ -33,10 +33,7 @@
   width: 15px;
   height: 13px;
   
-  stroke: var(--white);
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  color: var(--white);
 }
 
 .checkbox__label {
