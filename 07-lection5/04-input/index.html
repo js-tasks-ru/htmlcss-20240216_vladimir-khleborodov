@@ -6,10 +6,22 @@
     <link rel="stylesheet" href="./input.css">
   </head>
   <body>
-    <label class="input">
-      <span class="input__lable">Label</span>
+    <div class="input">
+      <label class="input__label" for="#input">Label</label>
       <div class="input__items">
-        <input class="input__textfield" type="text" placeholder="Placeholder">
+        <input class="input__textfield" id="#input" type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <div class="input">
+      <label class="input__label" for="#input-focus">Focus</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input-focus" type="text" placeholder="Placeholder" value="Filled Input">
+      </div>
+    </div>
+    <div class="input input_success">
+      <label class="input__label" for="#input-success">Success</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input-success" type="text" placeholder="Placeholder" value="Success">
         <svg class="input__icon input__icon_success">
           <use href="../../assets/images/icons.svg#success" />
         </svg>
@@ -17,11 +29,11 @@
           <use href="../../assets/images/icons.svg#error" />
         </svg>
       </div>
-    </label>
-    <label class="input">
-      <span class="input__lable">Focus</span>
+    </div>
+    <div class="input input_error">
+      <label class="input__label" for="#input-error">Error</label>
       <div class="input__items">
-        <input class="input__textfield" type="text" placeholder="Placeholder" value="Filled Input">
+        <input class="input__textfield" id="#input-error" type="text" placeholder="Placeholder" value="Error">
         <svg class="input__icon input__icon_success">
           <use href="../../assets/images/icons.svg#success" />
         </svg>
@@ -29,42 +41,12 @@
           <use href="../../assets/images/icons.svg#error" />
         </svg>
       </div>
-    </label>
-    <label class="input input_success">
-      <span class="input__lable">Success</span>
+    </div>
+    <div class="input">
+      <label class="input__label" for="#input-disabled">Disabled</label>
       <div class="input__items">
-        <input class="input__textfield" type="text" placeholder="Placeholder" value="Success">
-        <svg class="input__icon input__icon_success">
-          <use href="../../assets/images/icons.svg#success" />
-        </svg>
-        <svg class="input__icon input__icon_error">
-          <use href="../../assets/images/icons.svg#error" />
-        </svg>
+        <input class="input__textfield" id="input-disabled" type="text" placeholder="Placeholder" disabled>
       </div>
-    </label>
-    <label class="input input_error">
-      <span class="input__lable">Error</span>
-      <div class="input__items">
-        <input class="input__textfield" type="text" placeholder="Placeholder" value="Error">
-        <svg class="input__icon input__icon_success">
-          <use href="../../assets/images/icons.svg#success" />
-        </svg>
-        <svg class="input__icon input__icon_error">
-          <use href="../../assets/images/icons.svg#error" />
-        </svg>
-      </div>
-    </label>
-    <label class="input">
-      <span class="input__lable">Disabled</span>
-      <div class="input__items">
-        <input class="input__textfield" type="text" placeholder="Placeholder" disabled>
-        <svg class="input__icon input__icon_success">
-          <use href="../../assets/images/icons.svg#success" />
-        </svg>
-        <svg class="input__icon input__icon_error">
-          <use href="../../assets/images/icons.svg#error" />
-        </svg>
-      </div>
-    </label>
+    </div>
   </body>
 </html>

@@ -1,12 +1,10 @@
 .input {
-  display: block;
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.input__lable {
-  display: block;
-  margin-bottom: 5px;
-  
+.input__label {
   font-family: 'Inter', Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -21,14 +19,11 @@
 
 .input__items {
   position: relative;
-  
-  height: 56px;
 }
 
 .input__textfield {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
   padding: 17px 24px 13px;
   
   font-family: 'Inter', Helvetica, sans-serif;
@@ -44,12 +39,6 @@
 }
 
 .input__textfield::placeholder {
-  font-family: 'Inter', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: left;
-  
   color: var(--grey-2);
 }
 
