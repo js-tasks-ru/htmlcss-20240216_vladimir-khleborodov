@@ -1,8 +1,19 @@
 .tabs {
+  padding-bottom: 204px;
+
+  background-color: var(--grey-5);
+}
+
+.tabs__nav {
+  margin-bottom: 68px;
+  
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__menu {
   display: flex;
   gap: 40px;
-  width: 469px;
-  height: 37px;
 }
 
 .tabs__radio {
@@ -16,6 +27,7 @@
   
   display: flex;
   align-items: flex-start;
+  height: 37px;
   
   cursor: pointer;
 }
