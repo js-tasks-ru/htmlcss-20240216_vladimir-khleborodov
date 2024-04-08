@@ -31,16 +31,18 @@
   border-radius: 14px;
 }
 
-.radio__icon {
-  position: absolute;
-  
+.radio__circle-outer {
+  box-sizing: border-box;
   width: 28px;
   height: 28px;
   
-  color: var(--white);
+  border-radius: 14px;
+  border: 2px solid var(--white);
 }
 
 .radio__circle-inner {
+  position: absolute;
+  
   width: 18px;
   height: 18px;
   
@@ -65,8 +67,8 @@
 }
 
 .radio__button:checked ~ .radio__state
-.radio__icon {
-  color: var(--blue);
+.radio__circle-outer {
+  border-color: var(--blue);
 }
 
 .radio__button:checked ~ .radio__state
@@ -81,8 +83,8 @@
 }
 
 .radio__button:disabled ~ .radio__state
-.radio__icon {
-  color: var(--grey-2);
+.radio__circle-outer {
+  border-color: var(--grey-2);
 }
 
 .radio__button:disabled ~ .radio__state
