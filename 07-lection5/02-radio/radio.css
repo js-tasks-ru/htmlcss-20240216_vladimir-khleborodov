@@ -21,9 +21,7 @@
 .radio__control {
   position: relative;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
   width: 28px;
   height: 28px;
   
@@ -31,23 +29,17 @@
   border-radius: 14px;
 }
 
-.radio__circle-outer {
-  box-sizing: border-box;
-  width: 28px;
-  height: 28px;
-  
-  border-radius: 14px;
-  border: 2px solid var(--white);
-}
-
-.radio__circle-inner {
+.radio__circle {
   position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px);
   
+  display: none;
   width: 18px;
   height: 18px;
   
   border-radius: 14px;
-  background-color: var(--white);
+  background-color: var(--blue);
 }
 
 .radio__label {
@@ -67,29 +59,24 @@
 }
 
 .radio__button:checked ~ .radio__state
-.radio__circle-outer {
+.radio__control {
+  border-width: 2px;
   border-color: var(--blue);
 }
 
 .radio__button:checked ~ .radio__state
-.radio__circle-inner {
-  background-color: var(--blue);
+.radio__circle {
+  display: block;
 }
 
 .radio__button:disabled ~ .radio__state
 .radio__control {
   background-color: var(--grey-2);
-  border: var(--grey-2);
 }
 
 .radio__button:disabled ~ .radio__state
-.radio__circle-outer {
-  border-color: var(--grey-2);
-}
-
-.radio__button:disabled ~ .radio__state
-.radio__circle-inner {
-  background-color: var(--grey-2);
+.radio__circle {
+  display: none;
 }
 
 .radio__button:disabled ~ .radio__state
