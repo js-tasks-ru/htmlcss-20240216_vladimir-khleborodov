@@ -20,48 +20,25 @@
         </div>
       </header>
       <div class="tabs page__tabs">
+        <input class="tabs__radio" id="all-tab" type="radio" name="tab-item" checked>
+        <input class="tabs__radio" id="elements-tab" type="radio" name="tab-item">
+        <input class="tabs__radio" id="containers-tab" type="radio" name="tab-item">
+        <input class="tabs__radio" id="templates-tab" type="radio" name="tab-item">
+        
         <nav class="tabs__nav">
           <div class="container">
             <div class="tabs__menu">
-              <label class="tabs__item">
-                <input class="tabs__radio" type="radio" name="tab-item" checked>
-                <div class="tabs__item-state">
-                  <div class="tabs__item-control">
-                    <span class="tabs__text">All components</span>
-                  </div>
-                </div>
-              </label>
-              <label class="tabs__item">
-                <input class="tabs__radio" type="radio" name="tab-item">
-                <div class="tabs__item-state">
-                  <div class="tabs__item-control">
-                    <span class="tabs__text">Elements</span>
-                  </div>
-                </div>
-              </label>
-              <label class="tabs__item">
-                <input class="tabs__radio" type="radio" name="tab-item">
-                <div class="tabs__item-state">
-                  <div class="tabs__item-control">
-                    <span class="tabs__text">Containers</span>
-                  </div>
-                </div>
-              </label>
-              <label class="tabs__item">
-                <input class="tabs__radio" type="radio" name="tab-item">
-                <div class="tabs__item-state">
-                  <div class="tabs__item-control">
-                    <span class="tabs__text">Templates</span>
-                  </div>
-                </div>
-              </label>
+              <label class="tabs__label" for="all-tab">All components</label>
+              <label class="tabs__label" for="elements-tab">Elements</label>
+              <label class="tabs__label" for="containers-tab">Containers</label>
+              <label class="tabs__label" for="templates-tab">Templates</label>
             </div>
           </div>
         </nav>
         
         <main class="preview">
           <div class="container">
-            <div class="preview__cards">
+            <div class="preview__cards tabs_all">
               <div class="card">
                 <h3 class="card__text">Tooltip</h3>
               </div>
@@ -81,6 +58,9 @@
                 <h3 class="card__text">Avatar</h3>
               </div>
             </div>
+            <div class="preview__cards tabs_elements"></div>
+            <div class="preview__cards tabs_containers"></div>
+            <div class="preview__cards tabs_templates"></div>
           </div>
         </main>
       </div>
