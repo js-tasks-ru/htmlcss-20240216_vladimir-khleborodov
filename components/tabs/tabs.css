@@ -5,8 +5,6 @@
 }
 
 .tabs__nav {
-  margin-bottom: 68px;
-  
   background-color: var(--white);
   border-bottom: 1px solid var(--grey-2);
 }
@@ -42,12 +40,6 @@
   color: var(--grey-3);
 }
 
-.tabs__radio:checked ~ .tabs__item-state
-.tabs__text {
-  color: var(--black);
-}
-
-.tabs__radio:checked ~ .tabs__item-state
 .tabs__text:after {
   position: absolute;
   left: 0;
@@ -57,5 +49,15 @@
   width: 100%;
   height: 5px;
   
+  background-color: transparent;
+}
+
+.tabs__radio:checked ~ .tabs__item-state
+.tabs__text {
+  color: var(--black);
+}
+
+.tabs__radio:checked ~ .tabs__item-state
+.tabs__text:after {
   background-color: var(--black);
 }
