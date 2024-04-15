@@ -4,19 +4,7 @@
   background-color: var(--grey-5);
 }
 
-.tabs_all {
-  display: none;
-}
-
-.tabs_elements {
-  display: none;
-}
-
-.tabs_containers {
-  display: none;
-}
-
-.tabs_templates {
+.tabs__content {
   display: none;
 }
 
@@ -79,9 +67,9 @@
   background-color: var(--black);
 }
 
-.tabs__radio[id="all-tab"]:checked ~ .preview .tabs_all,
-.tabs__radio[id="elements-tab"]:checked ~ .preview .tabs_elements,
-.tabs__radio[id="containers-tab"]:checked ~ .preview .tabs_containers,
-.tabs__radio[id="templates-tab"]:checked ~ .preview .tabs_templates {
+.tabs__radio[id="all-tab"]:checked ~ .preview .tabs__content_all,
+.tabs__radio[id="elements-tab"]:checked ~ .preview .tabs__content_elements,
+.tabs__radio[id="containers-tab"]:checked ~ .preview .tabs__content_containers,
+.tabs__radio[id="templates-tab"]:checked ~ .preview .tabs__content_templates {
   display: flex;
 }
