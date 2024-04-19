@@ -19,30 +19,52 @@
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
-      <main class="preview page__main">
-        <div class="container">
-          <div class="preview__cards">
-            <div class="card">
-              <h3 class="card__text">Tooltip</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__text">Custom form elements</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__text">Calendar</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__text">Modal dialog</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__text">Histogram</h3>
-            </div>
-            <div class="card">
-              <h3 class="card__text">Avatar</h3>
+      <div class="tabs page__tabs">
+        <input class="tabs__radio" id="all-tab" type="radio" name="tab-item" checked>
+        <input class="tabs__radio" id="elements-tab" type="radio" name="tab-item">
+        <input class="tabs__radio" id="containers-tab" type="radio" name="tab-item">
+        <input class="tabs__radio" id="templates-tab" type="radio" name="tab-item">
+        
+        <nav class="tabs__nav">
+          <div class="container">
+            <div class="tabs__menu">
+              <label class="tabs__label" for="all-tab">All components</label>
+              <label class="tabs__label" for="elements-tab">Elements</label>
+              <label class="tabs__label" for="containers-tab">Containers</label>
+              <label class="tabs__label" for="templates-tab">Templates</label>
             </div>
           </div>
-        </div>
-      </main>
+        </nav>
+        
+        <main class="preview">
+          <div class="container">
+            <div class="preview__cards tabs__content tabs__content_all">
+              <div class="card">
+                <h3 class="card__text">Tooltip</h3>
+              </div>
+              <div class="card">
+                <h3 class="card__text">Custom form elements</h3>
+              </div>
+              <div class="card">
+                <h3 class="card__text">Calendar</h3>
+              </div>
+              <div class="card">
+                <h3 class="card__text">Modal dialog</h3>
+              </div>
+              <div class="card">
+                <h3 class="card__text">Histogram</h3>
+              </div>
+              <div class="card">
+                <h3 class="card__text">Avatar</h3>
+              </div>
+            </div>
+            <div class="preview__cards tabs__content tabs__content_elements"></div>
+            <div class="preview__cards tabs__content tabs__content_containers"></div>
+            <div class="preview__cards tabs__content tabs__content_templates"></div>
+          </div>
+        </main>
+      </div>
+      
       <footer class="footer">
         <div class="container">
           <h2 class="footer__title">About</h2>
