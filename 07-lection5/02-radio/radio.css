@@ -85,3 +85,22 @@
   
   color: var(--grey-2);
 }
+
+@media screen and (max-width: 520px) {
+  .radio_preview .radio__control{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .radio_preview .radio__circle {
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    
+    width: 10px;
+    height: 10px;
+  }
+  
+  .radio_preview .radio__label {
+    font-size: 12px;
+  }
+}

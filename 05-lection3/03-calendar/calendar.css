@@ -7,8 +7,8 @@
 }
 
 .calendar_preview {
-  width: 200px;
-  padding: 7%;
+  width: 50%;
+  padding: 5%;
 }
 
 .calendar__title {
@@ -74,10 +74,6 @@
   color: var(--grey-10);
 }
 
-.calendar_preview .calendar__item_day {
-  font-size: 9px;
-}
-
 .calendar__item_range_start {
   background-color: var(--blue);
   color: var(--white);
@@ -92,8 +88,16 @@
   color: var(--white);
 }
 
+@media screen and (max-width: 720px) {
+  .calendar_preview {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .calendar_preview {
+    width: 100%;
+    
     border: none;
   }
   

@@ -75,3 +75,26 @@
   
   color: var(--grey-2);
 }
+
+@media screen and (max-width: 620px) {
+  .checkbox_preview .checkbox__label {
+    position: relative;
+    left: -2.5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .checkbox_preview .checkbox__control{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .checkbox_preview .checkbox__icon {
+    width: 10px;
+    height: 8px;
+  }
+  
+  .checkbox_preview .checkbox__label {
+    font-size: 12px;
+  }
+}

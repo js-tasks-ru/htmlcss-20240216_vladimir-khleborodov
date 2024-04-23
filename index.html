@@ -19,7 +19,7 @@
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
-
+      
       <div class="tabs page__tabs">
         <input class="tabs__radio" id="all-tab" type="radio" name="tab-item" checked>
         <input class="tabs__radio" id="elements-tab" type="radio" name="tab-item">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </nav>
-
+        
         <main class="preview page__main preview_main-page">
           <div class="container">
             <div class="preview__cards tabs__content tabs__content_all">
@@ -52,13 +52,82 @@
                   </div>
                 </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Tooltip</h3>
+                  <h3 class="card__title">Tooltip</h3>
+                  <span class="card__text">Container</span>
                 </div>
               </div>
               <div class="card card_preview">
-                <div class="card__body"></div>
+                <div class="card__body card__body_custom-form-elem">
+                  <div class="card__checkbox">
+                    <label class="checkbox checkbox_preview">
+                      <input class="checkbox__input" type="checkbox" name="checkbox-name">
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use href="./assets/images/icons.svg#checkbox-icon" />
+                          </svg>
+                        </div>
+                        <div class="checkbox__label">Default</div>
+                      </div>
+                    </label>
+                    <label class="checkbox checkbox_preview">
+                      <input class="checkbox__input" type="checkbox" name="checkbox-name" checked>
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use href="./assets/images/icons.svg#checkbox-icon" />
+                          </svg>
+                        </div>
+                        <div class="checkbox__label">Default</div>
+                      </div>
+                    </label>
+                    <label class="checkbox checkbox_preview">
+                      <input class="checkbox__input" type="checkbox" name="checkbox-name" disabled>
+                      <div class="checkbox__state">
+                        <div class="checkbox__control">
+                          <svg class="checkbox__icon">
+                            <use href="./assets/images/icons.svg#checkbox-icon" />
+                          </svg>
+                        </div>
+                        <div class="checkbox__label">Default</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="card__radio">
+                    <label class="radio radio_preview">
+                      <input class="radio__button" type="radio" name="radio-name">
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__circle"></div>
+                        </div>
+                        <div class="radio__label">Default</div>
+                      </div>
+                    </label>
+                    
+                    <label class="radio radio_preview">
+                      <input class="radio__button" type="radio" name="radio-name" checked>
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__circle"></div>
+                        </div>
+                        <div class="radio__label">Selected</div>
+                      </div>
+                    </label>
+                    
+                    <label class="radio radio_preview">
+                      <input class="radio__button" type="radio" name="radio-name" disabled>
+                      <div class="radio__state">
+                        <div class="radio__control">
+                          <div class="radio__circle"></div>
+                        </div>
+                        <div class="radio__label">Disabled</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Custom form elements</h3>
+                  <h3 class="card__title">Custom form elements</h3>
+                  <span class="card__text">Element</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -121,7 +190,8 @@
                   </div>
                 </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Calendar</h3>
+                  <h3 class="card__title">Calendar</h3>
+                  <span class="card__text">Container</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -143,7 +213,8 @@
                   </div>
                 </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Modal</h3>
+                  <h3 class="card__title">Modal</h3>
+                  <span class="card__text">Container</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -193,7 +264,8 @@
                   </div>
                 </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Histogram</h3>
+                  <h3 class="card__title">Histogram</h3>
+                  <span class="card__text">Element</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -203,7 +275,8 @@
                   </div>
                 </div>
                 <div class="card__footer">
-                  <h3 class="card__text">Avatar</h3>
+                  <h3 class="card__title">Avatar</h3>
+                  <span class="card__text">Element</span>
                 </div>
               </div>
             </div>

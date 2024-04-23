@@ -49,6 +49,13 @@
   color: var(--black);
 }
 
+@media screen and (max-width: 768px) {
+  .footer_preview {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .footer_preview .footer__title {
     font-size: 28px;
