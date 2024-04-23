@@ -1,6 +1,8 @@
 .header {
+  position: relative;
+  
   padding-top: 24px;
-  padding-bottom: 77px;
+  padding-bottom: 40px;
   
   background-color: var(--white);
 }
@@ -24,6 +26,9 @@
 }
 
 .header__title {
+  position: relative;
+  left: -3px;
+  
   margin: 0;
   
   font-family: 'Inter', Verdana, sans-serif;

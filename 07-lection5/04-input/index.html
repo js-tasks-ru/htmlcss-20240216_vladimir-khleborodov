@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+  </head>
+  <body>
+    <div class="input">
+      <label class="input__label" for="#input">Label</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input" type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <div class="input">
+      <label class="input__label" for="#input-focus">Focus</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input-focus" type="text" placeholder="Placeholder" value="Filled Input">
+      </div>
+    </div>
+    <div class="input input_success">
+      <label class="input__label" for="#input-success">Success</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input-success" type="text" placeholder="Placeholder" value="Success">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </div>
+    <div class="input input_error">
+      <label class="input__label" for="#input-error">Error</label>
+      <div class="input__items">
+        <input class="input__textfield" id="#input-error" type="text" placeholder="Placeholder" value="Error">
+        <svg class="input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success" />
+        </svg>
+        <svg class="input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error" />
+        </svg>
+      </div>
+    </div>
+    <div class="input">
+      <label class="input__label" for="#input-disabled">Disabled</label>
+      <div class="input__items">
+        <input class="input__textfield" id="input-disabled" type="text" placeholder="Placeholder" disabled>
+      </div>
+    </div>
+  </body>
 </html>
