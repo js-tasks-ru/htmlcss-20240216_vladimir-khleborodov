@@ -4,13 +4,6 @@
   display: inline-block;
 }
 
-.tooltip_preview {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 8px;
-}
-
 .tooltip__trigger {
   height: 24px;
 }
@@ -47,8 +40,6 @@
 }
 
 .tooltip_preview .tooltip__bubble {
-  position: relative;
-  
   display: block;
 }
 

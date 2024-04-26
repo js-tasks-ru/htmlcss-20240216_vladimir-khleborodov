@@ -106,6 +106,5 @@
   
   .tabs__content_all {
     grid-template-columns: repeat(2, 164px);
-    gap: 16px;
   }
 }
