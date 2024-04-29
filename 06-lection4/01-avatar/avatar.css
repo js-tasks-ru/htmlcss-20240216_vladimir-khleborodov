@@ -1,6 +1,6 @@
 .avatar {
-  width: 102px;
-  height: 102px;
+  width: 160px;
+  height: 160px;
 }
 
 .avatar__img {
@@ -9,4 +9,11 @@
   object-fit: cover;
   
   border-radius: 50%;
+}
+
+@media screen and (max-width: 520px) {
+  .avatar_preview {
+    width: 116px;
+    height: 116px;
+  }
 }

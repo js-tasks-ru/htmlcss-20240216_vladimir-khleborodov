@@ -1,13 +1,11 @@
 .histogram {
+  box-sizing: border-box;
+  width: 100%;
   padding: 16px 24px 24px;
   
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-}
-
-.histogram_template {
-  width: 300px;
 }
 
 .histogram__header-wrapper {
@@ -85,4 +83,25 @@
 
 .histogram__chart-column_low {
   height: 25%;
+}
+
+@media screen and (max-width: 520px) {
+  .histogram_preview .histogram__header-wrapper {
+    margin-bottom: 12px;
+  }
+
+  .histogram_preview .histogram__title {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .histogram_preview .histogram__item {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .histogram_preview .histogram__data {
+    font-size: 12px;
+    line-height: 1;
+  }
 }

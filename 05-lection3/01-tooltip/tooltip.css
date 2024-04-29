@@ -4,6 +4,10 @@
   display: inline-block;
 }
 
+.tooltip__trigger {
+  height: 24px;
+}
+
 .tooltip__icon {
   width: 24px;
   height: 24px;
@@ -33,6 +37,10 @@
   border-radius: 10px;
   
   transform: translateX(-50%);
+}
+
+.tooltip_preview .tooltip__bubble {
+  display: block;
 }
 
 .tooltip__bubble::before {

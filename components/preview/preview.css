@@ -8,8 +8,9 @@
 }
 
 .preview__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
   gap: 30px;
 }
 
@@ -18,4 +19,18 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: max-content;
   column-gap: 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .preview_main-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .preview_main-page {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }

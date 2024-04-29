@@ -6,6 +6,11 @@
   border-radius: 8px;
 }
 
+.calendar_preview {
+  width: 50%;
+  padding: 5%;
+}
+
 .calendar__title {
   margin-bottom: 16px;
   
@@ -17,6 +22,10 @@
   text-align: center;
   
   color: var(--blue-3);
+}
+
+.calendar_preview .calendar__title {
+  font-size: 14px;
 }
 
 .calendar__wrapper {
@@ -52,6 +61,10 @@
   color: var(--blue-3);
 }
 
+.calendar_preview .calendar__item {
+  font-size: 9px;
+}
+
 .calendar__item_day {
   margin-bottom: 8px;
   
@@ -73,4 +86,34 @@
 .calendar__item_range_end {
   background-color: var(--blue);
   color: var(--white);
+}
+
+@media screen and (max-width: 720px) {
+  .calendar_preview {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .calendar_preview {
+    width: 100%;
+    
+    border: none;
+  }
+  
+  .calendar_preview .calendar__title {
+    margin-bottom: 0;
+    
+    font-size: 9px;
+  }
+  
+  .calendar_preview .calendar__item {
+    font-size: 5px;
+  }
+  
+  .calendar_preview .calendar__item_day {
+    margin-bottom: 0;
+    
+    font-size: 5px;
+  }
 }
