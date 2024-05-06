@@ -18,6 +18,13 @@
   background-color: transparent;
 }
 
+.modal_main-page {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .modal__window {
   position: relative;
   top: 50%;

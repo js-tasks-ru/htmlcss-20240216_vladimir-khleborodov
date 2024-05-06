@@ -15,6 +15,35 @@
                 <use href="./assets/images/icons.svg#logo-icon" />
               </svg>
             </div>
+            <div class="header__menu">
+              <ul class="header__nav">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">Components</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">About</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">Contact</a>
+                </li>
+              </ul>
+              <div class="header__nav-theme">
+                <svg class="header__sun">
+                  <use href="../../assets/images/icons.svg#sun" />
+                </svg>
+                <label class="toggler">
+                  <input class="toggler__checkbox" type="checkbox">
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <span class="toggler__switch"></span>
+                    </div>
+                  </div>
+                </label>
+                <svg class="header__moon">
+                  <use href="../../assets/images/icons.svg#moon" />
+                </svg>
+              </div>
+            </div>
           </div>
           <h1 class="header__title">Reusable component library</h1>
         </div>
@@ -37,14 +66,14 @@
           </div>
         </nav>
         
-        <main class="preview page__main preview_main-page">
+        <main class="preview preview_paddings">
           <div class="container">
-            <div class="preview__cards tabs__content tabs__content_all">
+            <div class="tabs__content tabs__content_all">
               <div class="card card_preview">
                 <div class="card__body">
                   <div class="tooltip tooltip_preview">
                     <div class="tooltip__trigger">
-                      <svg class="tooltip__icon" viewBox="0 0 24 24">
+                      <svg class="tooltip__icon">
                         <use href="../../assets/images/icons.svg#help" />
                       </svg>
                     </div>
@@ -53,7 +82,7 @@
                 </div>
                 <div class="card__footer">
                   <h3 class="card__title">Tooltip</h3>
-                  <span class="card__text">Container</span>
+                  <span class="card__text">Element</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -198,7 +227,7 @@
                 <div class="card__body">
                   <div class="modal modal_preview">
                     <div class="modal__window">
-                      <svg class="modal__close" id="modal-close">
+                      <svg class="modal__close">
                         <use href="./assets/images/icons.svg#cross" />
                       </svg>
                       <span class="modal__title">Modal title</span>
@@ -214,7 +243,7 @@
                 </div>
                 <div class="card__footer">
                   <h3 class="card__title">Modal</h3>
-                  <span class="card__text">Container</span>
+                  <span class="card__text">Template</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -265,7 +294,7 @@
                 </div>
                 <div class="card__footer">
                   <h3 class="card__title">Histogram</h3>
-                  <span class="card__text">Element</span>
+                  <span class="card__text">Template</span>
                 </div>
               </div>
               <div class="card card_preview">
@@ -279,12 +308,576 @@
                   <span class="card__text">Element</span>
                 </div>
               </div>
+              
+              <div class="card card_preview">
+                <div class="card__body">
+                  <div class="card__buttons">
+                    <button class="button button_primary button_preview">Primary</button>
+                    <button class="button button_secondary button_preview">Secondary</button>
+                    <button class="button button_alternate button_preview">Alternate</button>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title">Button</h3>
+                  <span class="card__text">Element</span>
+                </div>
+              </div>
+              
+              <div class="card card_preview">
+                <div class="card__body">
+                  <div class="card__accordion">
+                    <div class="accordion accordion_preview">
+                      <details class="accordion__item" closed>
+                        <summary class="accordion__summary">
+                          <span class="accordion__summary-title">Accordion item</span>
+                          <svg class="accordion__icon">
+                            <use href="../../assets/images/icons.svg#arrow" />
+                          </svg>
+                        </summary>
+                        <p class="accordion__content">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        </p>
+                      </details>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title">Accordion</h3>
+                  <span class="card__text">Container</span>
+                </div>
+              </div>
+              
+              <div class="card card_preview">
+                <div class="card__body">
+                  <div class="card__input">
+                    <div class="input input_preview">
+                      <div class="input__items">
+                        <input class="input__textfield" type="text" placeholder="Placeholder">
+                      </div>
+                    </div>
+                    <div class="input input_success input_preview">
+                      <div class="input__items">
+                        <input class="input__textfield" type="text" placeholder="Placeholder" value="Success">
+                        <svg class="input__icon input__icon_success">
+                          <use href="../../assets/images/icons.svg#success" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="input input_error input_preview">
+                      <div class="input__items">
+                        <input class="input__textfield" type="text" placeholder="Placeholder" value="Error">
+                        <svg class="input__icon input__icon_error">
+                          <use href="../../assets/images/icons.svg#error" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title">Accordion</h3>
+                  <span class="card__text">Container</span>
+                </div>
+              </div>
+              
+              <div class="card card_preview">
+                <div class="card__body">
+                  <div class="card__skeleton">
+                    <div class="skeleton skeleton_preview">
+                      <div class="skeleton__item">
+                        <div class="skeleton__ellipse skeleton__ellipse_dimensions"></div>
+                        <div class="skeleton__lines-group">
+                          <div class="skeleton__line skeleton__line_short"></div>
+                          <div class="skeleton__line skeleton__line_middle"></div>
+                        </div>
+                      </div>
+                      <div class="skeleton__item skeleton__item_column">
+                        <div class="skeleton__line skeleton__line_long"></div>
+                        <div class="skeleton__line skeleton__line_long"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title">Skeleton</h3>
+                  <span class="card__text">Template</span>
+                </div>
+              </div>
+              
+              <div class="card card_preview">
+                <div class="card__body">
+                  <div class="card__toggler">
+                    <label class="toggler toggler_preview">
+                      <input class="toggler__checkbox" type="checkbox" name="toggler-name">
+                      <div class="toggler__state">
+                        <div class="toggler__control">
+                          <span class="toggler__switch"></span>
+                        </div>
+                        <div class="toggler__label">Off</div>
+                      </div>
+                    </label>
+                    <label class="toggler toggler_preview">
+                      <input class="toggler__checkbox" type="checkbox" name="toggler-name" checked>
+                      <div class="toggler__state">
+                        <div class="toggler__control">
+                          <span class="toggler__switch"></span>
+                        </div>
+                        <div class="toggler__label">On</div>
+                      </div>
+                    </label>
+                    <label class="toggler toggler_preview">
+                      <input class="toggler__checkbox" type="checkbox" name="toggler-name" disabled>
+                      <div class="toggler__state">
+                        <div class="toggler__control">
+                          <span class="toggler__switch"></span>
+                        </div>
+                        <div class="toggler__label">Disabled</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title">Toggle</h3>
+                  <span class="card__text">Element</span>
+                </div>
+              </div>
             </div>
-            <div class="preview__cards tabs__content tabs__content_elements"></div>
-            <div class="preview__cards tabs__content tabs__content_containers"></div>
-            <div class="preview__cards tabs__content tabs__content_templates"></div>
+            
+            <div class="tabs__content tabs__content_elements">
+              <div class="tabs__grid tabs__grid_cards">
+                <div class="card card_preview">
+                  <div class="card__body">
+                    <div class="tooltip tooltip_preview">
+                      <div class="tooltip__trigger">
+                        <svg class="tooltip__icon">
+                          <use href="../../assets/images/icons.svg#help" />
+                        </svg>
+                      </div>
+                      <div class="tooltip__bubble">Helper Text</div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <h3 class="card__title">Tooltip</h3>
+                    <span class="card__text">Element</span>
+                  </div>
+                </div>
+                
+                <div class="card card_preview">
+                  <div class="card__body">
+                    <div class="avatar avatar_preview">
+                      <img class="avatar__img" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="аватар">
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <h3 class="card__title">Avatar</h3>
+                    <span class="card__text">Element</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Buttons</h3>
+                <div class="tabs__grid tabs__grid_buttons">
+                  <button class="button  button_padding button_text-only">Button</button>
+                  <button class="button button_padding button_primary">Primary</button>
+                  <button class="button button_padding button_secondary">Secondary</button>
+                  <button class="button button_padding button_alternate">Alternate</button>
+                  <button class="button button_padding button_text-only">Button disabled</button>
+                  <button class="button button_padding button_primary" disabled>Primary</button>
+                  <button class="button button_padding button_secondary" disabled>Secondary</button>
+                  <button class="button button_padding button_alternate" disabled>Alternate</button>
+                </div>
+              </div>
+              
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Custom Form Elements</h3>
+                <div class="tabs__grid tabs__grid_custom-forms">
+                  <label class="radio">
+                    <input class="radio__button" type="radio" name="radio-name">
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__circle"></div>
+                      </div>
+                      <div class="radio__label">Default</div>
+                    </div>
+                  </label>
+                  
+                  <label class="radio">
+                    <input class="radio__button" type="radio" name="radio-name" checked>
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__circle"></div>
+                      </div>
+                      <div class="radio__label">Selected</div>
+                    </div>
+                  </label>
+                  
+                  <label class="radio">
+                    <input class="radio__button" type="radio" name="radio-name" disabled>
+                    <div class="radio__state">
+                      <div class="radio__control">
+                        <div class="radio__circle"></div>
+                      </div>
+                      <div class="radio__label">Disabled</div>
+                    </div>
+                  </label>
+                  
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-name">
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#checkbox-icon" />
+                        </svg>
+                      </div>
+                      <div class="checkbox__label">Default</div>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-name" checked>
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#checkbox-icon" />
+                        </svg>
+                      </div>
+                      <div class="checkbox__label">Default</div>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="checkbox-name" disabled>
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../assets/images/icons.svg#checkbox-icon" />
+                        </svg>
+                      </div>
+                      <div class="checkbox__label">Default</div>
+                    </div>
+                  </label>
+                  
+                  <label class="toggler">
+                    <input class="toggler__checkbox" type="checkbox" name="toggler-name">
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <span class="toggler__switch"></span>
+                      </div>
+                      <div class="toggler__label">Off</div>
+                    </div>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__checkbox" type="checkbox" name="toggler-name" checked>
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <span class="toggler__switch"></span>
+                      </div>
+                      <div class="toggler__label">On</div>
+                    </div>
+                  </label>
+                  <label class="toggler">
+                    <input class="toggler__checkbox" type="checkbox" name="toggler-name" disabled>
+                    <div class="toggler__state">
+                      <div class="toggler__control">
+                        <span class="toggler__switch"></span>
+                      </div>
+                      <div class="toggler__label">Disabled</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content tabs__content_containers">
+              <div class="tabs__grid tabs__grid_cards">
+                <div class="card card_preview">
+                  <div class="card__body">
+                    <div class="calendar calendar_preview">
+                      <div class="calendar__title">October 2019</div>
+                      <div class="calendar__wrapper">
+                        <div class="calendar__inner">
+                          <div class="calendar__item calendar__item_day">Mon</div>
+                          <div class="calendar__item calendar__item_day">Tue</div>
+                          <div class="calendar__item calendar__item_day">Wed</div>
+                          <div class="calendar__item calendar__item_day">Thu</div>
+                          <div class="calendar__item calendar__item_day">Fri</div>
+                          <div class="calendar__item calendar__item_day">Sat</div>
+                          <div class="calendar__item calendar__item_day">San</div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item">1</div>
+                          <div class="calendar__item">2</div>
+                          <div class="calendar__item">3</div>
+                          <div class="calendar__item">4</div>
+                          <div class="calendar__item">5</div>
+                          <div class="calendar__item">6</div>
+                          <div class="calendar__item">7</div>
+                          <div class="calendar__item">8</div>
+                          <div class="calendar__item">9</div>
+                          <div class="calendar__item">10</div>
+                          <div class="calendar__item">11</div>
+                          <div class="calendar__item">12</div>
+                          <div class="calendar__item">13</div>
+                          <div class="calendar__item">14</div>
+                          <div class="calendar__item">15</div>
+                          <div class="calendar__item">16</div>
+                          <div class="calendar__item">17</div>
+                          <div class="calendar__item calendar__item_range_start">18</div>
+                          <div class="calendar__item calendar__item_range_middle">19</div>
+                          <div class="calendar__item calendar__item_range_middle">20</div>
+                          <div class="calendar__item calendar__item_range_middle">21</div>
+                          <div class="calendar__item calendar__item_range_middle">22</div>
+                          <div class="calendar__item calendar__item_range_end">23</div>
+                          <div class="calendar__item">24</div>
+                          <div class="calendar__item">25</div>
+                          <div class="calendar__item">26</div>
+                          <div class="calendar__item">27</div>
+                          <div class="calendar__item">28</div>
+                          <div class="calendar__item">29</div>
+                          <div class="calendar__item">30</div>
+                          <div class="calendar__item">31</div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                          <div class="calendar__item"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <h3 class="card__title">Calendar</h3>
+                    <span class="card__text">Container</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Accordion</h3>
+                <div class="tabs__grid tabs__grid_accordion">
+                  <div class="accordion">
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        <span class="accordion__summary-title">Accordion item 1</span>
+                        <svg class="accordion__icon">
+                          <use href="../../assets/images/icons.svg#arrow" />
+                        </svg>
+                      </summary>
+                      <p class="accordion__content">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                        sunt nostrud amet.
+                      </p>
+                    </details>
+                    
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        <span class="accordion__summary-title">Accordion item 2</span>
+                        <svg class="accordion__icon">
+                          <use href="../../assets/images/icons.svg#arrow" />
+                        </svg>
+                      </summary>
+                      <p class="accordion__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </details>
+                    
+                    <details class="accordion__item">
+                      <summary class="accordion__summary">
+                        <span class="accordion__summary-title">Accordion item 3</span>
+                        <svg class="accordion__icon">
+                          <use href="../../assets/images/icons.svg#arrow" />
+                        </svg>
+                      </summary>
+                      <p class="accordion__content">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                        ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Input</h3>
+                <div class="tabs__grid tabs__grid_input">
+                  <div class="input">
+                    <label class="input__label" for="#input">Label</label>
+                    <div class="input__items">
+                      <input class="input__textfield" id="#input" type="text" placeholder="Placeholder">
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label class="input__label" for="#input-focus">Focus</label>
+                    <div class="input__items">
+                      <input class="input__textfield" id="#input-focus" type="text" placeholder="Placeholder" value="Filled Input">
+                    </div>
+                  </div>
+                  <div class="input input_success">
+                    <label class="input__label" for="#input-success">Success</label>
+                    <div class="input__items">
+                      <input class="input__textfield" id="#input-success" type="text" placeholder="Placeholder" value="Success">
+                      <svg class="input__icon input__icon_success">
+                        <use href="../../assets/images/icons.svg#success" />
+                      </svg>
+                      <svg class="input__icon input__icon_error">
+                        <use href="../../assets/images/icons.svg#error" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="input input_error">
+                    <label class="input__label" for="#input-error">Error</label>
+                    <div class="input__items">
+                      <input class="input__textfield" id="#input-error" type="text" placeholder="Placeholder" value="Error">
+                      <svg class="input__icon input__icon_success">
+                        <use href="../../assets/images/icons.svg#success" />
+                      </svg>
+                      <svg class="input__icon input__icon_error">
+                        <use href="../../assets/images/icons.svg#error" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label class="input__label" for="#input-disabled">Disabled</label>
+                    <div class="input__items">
+                      <input class="input__textfield" id="input-disabled" type="text" placeholder="Placeholder" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__content tabs__content_templates">
+              <div class="tabs__grid tabs__grid_cards">
+                <div class="card card_preview">
+                  <div class="card__body">
+                    <div class="modal modal_preview">
+                      <div class="modal__window">
+                        <svg class="modal__close">
+                          <use href="./assets/images/icons.svg#cross" />
+                        </svg>
+                        <span class="modal__title">Modal title</span>
+                        <p class="modal__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                          sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                          do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                          consequat sunt nostrud amet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <h3 class="card__title">Modal</h3>
+                    <span class="card__text">Template</span>
+                  </div>
+                </div>
+                
+                <div class="card card_preview">
+                  <div class="card__body">
+                    <div class="histogram histogram_preview">
+                      <div class="histogram__header-wrapper">
+                        <div class="histogram__header">
+                          <span class="histogram__title">Total orders</span>
+                          <span class="histogram__item">
+                            <a class="histogram__link" href="#0">View all</a>
+                          </span>
+                        </div>
+                        <span class="histogram__data">50254</span>
+                      </div>
+                      <div class="histogram__chart">
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_high"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_high"></div>
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_high"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_high"></div>
+                        <div class="histogram__chart-column histogram__chart-column_max"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_low"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                        <div class="histogram__chart-column histogram__chart-column_high"></div>
+                        <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <h3 class="card__title">Histogram</h3>
+                    <span class="card__text">Template</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Modal</h3>
+                <div class="tabs__grid tabs__grid_modal">
+                  <div class="modal modal_main-page" id="modal">
+                    <div class="modal__window">
+                      <svg class="modal__close" id="modal-close">
+                        <use href="../../assets/images/icons.svg#cross" />
+                      </svg>
+                      <span class="modal__title">Modal title</span>
+                      <p class="modal__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                        sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                        consequat sunt nostrud amet.
+                      </p>
+                    </div>
+                  </div>
+                  <button class="button button_padding button_primary" id="modal-open">Open modal</button>
+                </div>
+              </div>
+              <div class="tabs__wrapper">
+                <h3 class="tabs__title">Skeleton</h3>
+                <div class="tabs__grid tabs__grid_skeleton">
+                  <div class="skeleton">
+                    <div class="skeleton__item">
+                      <div class="skeleton__ellipse skeleton__ellipse_dimensions"></div>
+                      <div class="skeleton__lines-group">
+                        <div class="skeleton__line skeleton__line_short"></div>
+                        <div class="skeleton__line skeleton__line_middle"></div>
+                      </div>
+                    </div>
+                    <div class="skeleton__item skeleton__item_column">
+                      <div class="skeleton__line skeleton__line_long"></div>
+                      <div class="skeleton__line skeleton__line_long"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
+        <div class="tabs__btn-wrapper">
+          <button class="button button_alternate">Load more</button>
+        </div>
       </div>
       <footer class="footer footer_preview">
         <div class="container">
@@ -297,5 +890,7 @@
         </div>
       </footer>
     </div>
+    <script src="./05-lection3/02-modal/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -60,3 +60,19 @@
 .accordion__item[open] .accordion__icon {
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 768px) {
+  .accordion_preview .accordion__item{
+    padding: 16px 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .accordion_preview .accordion__summary-title{
+    font-size: 12px;
+  }
+
+  .accordion_preview .accordion__content {
+    font-size: 12px;
+  }
+}

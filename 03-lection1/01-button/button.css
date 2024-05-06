@@ -15,6 +15,10 @@
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
+.button_padding {
+  padding: 14px;
+}
+
 .button:hover {
   cursor: pointer;
 }
@@ -48,4 +52,18 @@
 
 .button_alternate:hover {
   border-color: var(--black);
+}
+
+.button_text-only {
+  background-color: transparent;
+  border: none;
+  color: var(--grey-4);
+  text-wrap: nowrap;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 520px) {
+  .button_preview {
+    padding: 10px 14px;
+  }
 }
