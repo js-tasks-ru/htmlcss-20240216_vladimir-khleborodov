@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-.tabs__label_template {
+.tabs_template .tabs__label {
   text-transform: uppercase;
 }
 
@@ -147,6 +147,20 @@
   display: grid;
 }
 
+.tabs__grid-text {
+  place-self: center;
+  
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-wrap: nowrap;
+  
+  color: var(--black);
+}
+
 .tabs__grid_cards {
   margin-bottom: 64px;
   grid-template-columns: repeat(2, 350px);
@@ -182,12 +196,20 @@
   grid-template-columns: 178px;
 }
 
-.tabs__component-html {
+.tabs__component-html, .tabs__component-css {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 50px;
   
+  font-family: 'Inter', Helvetica, sans-serif;
+  
   overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tabs__component-code {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 @media screen and (max-width: 1160px) {
@@ -202,6 +224,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .tabs {
+    padding-bottom: 24px;
+  }
+  
+  .tabs_template {
+    padding: 0;
+  }
+  
   .tabs__grid_cards,
   .tabs__radio[id="all-tab"]:checked ~ .preview .tabs__content_all {
     grid-template-columns: repeat(2, minmax(164px, 350px));
@@ -222,6 +252,10 @@
   .tabs__grid_custom-forms,
   .tabs__grid_input {
     gap: 16px;
+  }
+  
+  .tabs__component-html {
+    padding-top: 22px;
   }
 }
 

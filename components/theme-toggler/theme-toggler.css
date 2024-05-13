@@ -1,0 +1,19 @@
+.theme-toggler {
+  height: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.theme-toggler__sun {
+  width: 24px;
+  height: 24px;
+  
+  color: var(--grey-4);
+}
+
+.theme-toggler__moon {
+  width: 24px;
+  height: 24px;
+  
+  color: var(--grey-3);
+}

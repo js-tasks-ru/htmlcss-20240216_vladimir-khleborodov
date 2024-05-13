@@ -72,26 +72,6 @@
   color: var(--black);
 }
 
-.header__nav-theme {
-  height: 24px;
-  display: flex;
-  gap: 12px;
-}
-
-.header__sun {
-  width: 24px;
-  height: 24px;
-  
-  color: var(--grey-4);
-}
-
-.header__moon {
-  width: 24px;
-  height: 24px;
-  
-  color: var(--grey-3);
-}
-
 .header__title {
   position: relative;
   left: -3px;

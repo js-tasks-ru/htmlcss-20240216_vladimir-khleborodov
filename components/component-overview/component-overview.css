@@ -24,3 +24,9 @@
   
   color: var(--grey-4);
 }
+
+@media screen and (max-width: 768px) {
+  .component-overview {
+    padding: 32px 16px 16px;
+  }
+}

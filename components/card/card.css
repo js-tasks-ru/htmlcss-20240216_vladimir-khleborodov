@@ -25,10 +25,16 @@
   column-gap: 37px;
 }
 
-.card__checkbox, .card__radio, .card__toggler, .card__buttons, .card__input {
+.card__checkbox, .card__radio, .card__toggler, .card__input {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.card__buttons {
+  display: grid;
+  grid-template-columns: minmax(10px, 198px);
+  row-gap: 12px;
 }
 
 .card__accordion, .card__skeleton {
