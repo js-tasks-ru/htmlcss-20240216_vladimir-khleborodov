@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 61px 14px;
+  padding: 14px;
   
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
@@ -48,4 +48,9 @@
 
 .button_alternate:hover {
   border-color: var(--black);
+}
+
+.button_preview {
+  padding-left: 52px;
+  padding-right: 52px;
 }

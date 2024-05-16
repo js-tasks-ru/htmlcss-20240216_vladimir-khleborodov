@@ -55,3 +55,24 @@
 .skeleton__line_long {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .skeleton_preview {
+    padding: 16px;
+  }
+
+  .skeleton_preview .skeleton__line {
+    height: 10px;
+  }
+
+  .skeleton_preview .skeleton__ellipse_dimensions {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .skeleton {
+    gap: 16px;
+  }
+}

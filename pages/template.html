@@ -7,82 +7,301 @@
   </head>
   <body>
     <div class="page page_template">
-      <header class="header">
+      <header class="header header_template">
         <div class="container">
+          <div class="header__items">
+            <div class="header__logo">
+              <svg class="header__logo-icon">
+                <use href="../assets/images/icons.svg#logo-icon" />
+              </svg>
+            </div>
+            <div class="header__menu">
+              <ul class="header__nav">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">Components</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">About</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#0">Contact</a>
+                </li>
+              </ul>
+              <div class="theme-toggler">
+                <svg class="theme-toggler__sun">
+                  <use href="../../assets/images/icons.svg#sun" />
+                </svg>
+                <label class="toggler">
+                  <input class="toggler__checkbox" type="checkbox">
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <span class="toggler__switch"></span>
+                    </div>
+                  </div>
+                </label>
+                <svg class="theme-toggler__moon">
+                  <use href="../../assets/images/icons.svg#moon" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
-      <main class="preview preview_padding">
+      <main class="preview preview_template">
         <div class="container">
-          <div class="preview__template">
+          <div class="preview__body">
             <div class="sidebar">
-              <h4 class="sidebar__title">Components</h4>
-              <div class="sidebar__menu">
+              <div class="sidebar__body">
+                <div class="sidebar__content">
+                  <h4 class="sidebar__title">Elements</h4>
+                  <div class="sidebar__menu">
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Tooltip</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Avatar</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Buttons</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Custom form elements</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="sidebar__content">
+                  <h4 class="sidebar__title">Containers</h4>
+                  <div class="sidebar__menu">
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Calendar</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Accordion</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Input</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="sidebar__content">
+                  <h4 class="sidebar__title">Templates</h4>
+                  <div class="sidebar__menu">
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Modal</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Histogram</a>
+                    </h5>
+                    <h5 class="sidebar__item">
+                      <a class="sidebar__item-link" href="#0">Skeleton</a>
+                    </h5>
+                  </div>
+                </div>
                 <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Modal</a>
-                </h5>
-                <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Tooltip</a>
-                </h5>
-                <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Avatar</a>
-                </h5>
-                <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Calendar</a>
-                </h5>
-                <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Histogram</a>
-                </h5>
-                <h5 class="sidebar__item">
-                  <a class="sidebar__item-link" href="#0">Custom form elements</a>
+                  <a class="sidebar__item-link" href="#0">Main page</a>
                 </h5>
               </div>
-              <h5 class="sidebar__item">
-                <a class="sidebar__item-link" href="#0">Main page</a>
-              </h5>
             </div>
             <div class="component-overview">
-              <h3 class="component-overview__title">Histogram</h3>
-              <div class="histogram histogram_template">
-                <div class="histogram__header-wrapper">
-                  <div class="histogram__header">
-                    <span class="histogram__title">Total orders</span>
-                    <span class="histogram__item">
-                      <a class="histogram__link" href="#0">View all</a>
-                    </span>
+              <div class="component-overview__inner">
+                <h3 class="component-overview__title">Histogram</h3>
+                <div class="histogram">
+                  <div class="histogram__header-wrapper">
+                    <div class="histogram__header">
+                      <span class="histogram__title">Total orders</span>
+                      <span class="histogram__item">
+                        <a class="histogram__link" href="#0">View all</a>
+                      </span>
+                    </div>
+                    <span class="histogram__data">50254</span>
                   </div>
-                  <span class="histogram__data">50254</span>
+                  <div class="histogram__chart">
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_max"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_low"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                    <div class="histogram__chart-column histogram__chart-column_high"></div>
+                    <div class="histogram__chart-column histogram__chart-column_middle"></div>
+                  </div>
                 </div>
-                <div class="histogram__chart">
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_high"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_high"></div>
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_high"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_high"></div>
-                  <div class="histogram__chart-column histogram__chart-column_max"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_low"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
-                  <div class="histogram__chart-column histogram__chart-column_high"></div>
-                  <div class="histogram__chart-column histogram__chart-column_middle"></div>
+              </div>
+              <div class="tabs tabs_template">
+                <input class="tabs__radio" id="html-tab" type="radio" name="tab-template-item" checked>
+                <input class="tabs__radio" id="css-tab" type="radio" name="tab-template-item">
+                
+                <nav class="tabs__nav">
+                  <div class="container">
+                    <div class="tabs__menu">
+                      <label class="tabs__label" for="html-tab">Html</label>
+                      <label class="tabs__label" for="css-tab">Css</label>
+                    </div>
+                  </div>
+                </nav>
+                <div class="tabs__line"></div>
+                <div class="tabs__content tabs__content_html">
+                  <pre class="tabs__component-html">
+                    <code class="tabs__component-code">
+                      &lt;div class=&quot;histogram&quot;&gt;
+                        &lt;div class=&quot;histogram__header-wrapper&quot;&gt;
+                          &lt;div class=&quot;histogram__header&quot;&gt;
+                            &lt;span class=&quot;histogram__title&quot;&gt;Total orders&lt;/span&gt;
+                            &lt;span class=&quot;histogram__item&quot;&gt;
+                              &lt;a class=&quot;histogram__link&quot; href=&quot;#0&quot;&gt;View all&lt;/a&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                          &lt;span class=&quot;histogram__data&quot;&gt;50254&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;histogram__chart&quot;&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_high&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_high&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_high&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_high&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_max&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_low&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_high&quot;&gt;&lt;/div&gt;
+                          &lt;div class=&quot;histogram__chart-column histogram__chart-column_middle&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content_css">
+                  <pre class="tabs__component-css">
+                    <code class="tabs__component-code">
+                      .histogram {
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 16px 24px 24px;
+                        
+                        background-color: var(--white);
+                        border: 1px solid var(--grey-3);
+                        border-radius: 8px;
+                      }
+                      
+                      .histogram__header-wrapper {
+                        margin-bottom: 39px;
+                      }
+                      
+                      .histogram__header {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 6px;
+                      }
+                      
+                      .histogram__title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        
+                        color: var(--black);
+                        opacity: 0.8;
+                      }
+                      
+                      .histogram__item {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        
+                        color: var(--black);
+                      }
+                      
+                      .histogram__link {
+                        font-family: inherit;
+                        text-decoration: none;
+                        
+                        color: var(--blue);
+                      }
+                      
+                      .histogram__data {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                      }
+                      
+                      .histogram__chart {
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 1px;
+                        width: 100%;
+                        height: 50px;
+                      }
+                      
+                      .histogram__chart-column {
+                        width: var(--chart-column-width);
+                        
+                        background-color: var(--blue);
+                      }
+                      
+                      .histogram__chart-column_max {
+                        height: 100%;
+                      }
+                      
+                      .histogram__chart-column_high {
+                        height: 75%;
+                      }
+                      
+                      .histogram__chart-column_middle {
+                        height: 50%;
+                      }
+                      
+                      .histogram__chart-column_low {
+                        height: 25%;
+                      }
+                    </code>
+                  </pre>
                 </div>
               </div>
             </div>
@@ -95,5 +314,6 @@
         </div>
       </footer>
     </div>
+    <script src="./tabs-line.js"></script>
   </body>
 </html>

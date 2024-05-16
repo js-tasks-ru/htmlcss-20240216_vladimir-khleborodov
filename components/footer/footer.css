@@ -2,14 +2,16 @@
   padding-top: 71px;
   padding-bottom: 136px;
   
+  background-color: inherit;
+}
+
+.footer_preview {
   background-color: var(--white);
 }
 
 .footer_template {
-  padding-top: 92px;
+  padding-top: 56px;
   padding-bottom: 56px;
-  
-  background-color: var(--grey-5);
 }
 
 .footer__title {
@@ -27,6 +29,8 @@
 }
 
 .footer_template .footer__title {
+  margin-bottom: 0;
+  
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.04em;

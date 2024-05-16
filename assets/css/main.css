@@ -9,6 +9,7 @@
 @import "../../components/sidebar/sidebar.css";
 @import "../../components/component-overview/component-overview.css";
 @import "../../components/tabs/tabs.css";
+@import "../../components/theme-toggler/theme-toggler.css";
 @import "../../03-lection1/01-button/button.css";
 @import "../../03-lection1/02-accordion/accordion.css";
 @import "../../04-lection2/01-histogram/histogram.css";
