@@ -23,7 +23,7 @@
   box-sizing: border-box;
   width: 52px;
   height: 28px;
-  padding: 2px 3px;
+  padding: 1px;
   
   border: 1px solid var(--grey-2);
   border-radius: 16px;
@@ -33,8 +33,8 @@
 
 .toggler__switch {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   
   border-radius: 16px;
   background-color: var(--grey-2);
