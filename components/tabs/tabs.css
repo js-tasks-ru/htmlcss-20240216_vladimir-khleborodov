@@ -253,10 +253,6 @@
   .tabs__grid_input {
     gap: 16px;
   }
-  
-  .tabs__component-html {
-    padding-top: 22px;
-  }
 }
 
 @media screen and (max-width: 520px) {
@@ -277,5 +273,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
     gap: 16px 0;
+  }
+  
+  .tabs__component-html,
+  .tabs__component-css {
+    padding-top: 22px;
   }
 }
