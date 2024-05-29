@@ -37,6 +37,8 @@
   border: 1px solid var(--grey-2);
   border-radius: 8px;
   color: var(--grey-4);
+  
+  transition: border-color 200ms ease-in-out;
 }
 
 .input__textfield::placeholder {
@@ -115,7 +117,7 @@
     padding: 18px;
     height: 28px;
   }
-
+  
   .input_preview .input__icon{
     top: 13px;
     right: 8px;
