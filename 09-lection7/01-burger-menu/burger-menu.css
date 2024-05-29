@@ -8,9 +8,7 @@
   box-sizing: border-box;
   
   background-color: var(--grey-5);
-}
-
-.burger-menu_hidden {
+  
   transform: translateX(-100vw);
   transition: transform 250ms linear;
 }
