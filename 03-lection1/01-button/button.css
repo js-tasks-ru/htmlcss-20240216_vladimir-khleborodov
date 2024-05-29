@@ -12,7 +12,9 @@
   border: none;
   color: var(--white);
   
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out,
+    background 200ms ease-in-out,
+    transform 200ms ease-in-out;
 }
 
 .button:hover {
@@ -22,6 +24,10 @@
 .button:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.button:active {
+  transform: translate(0, 2px);
 }
 
 .button_primary {
