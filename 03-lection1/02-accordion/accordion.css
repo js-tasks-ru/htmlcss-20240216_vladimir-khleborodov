@@ -1,9 +1,13 @@
 .accordion__item {
+  box-sizing: border-box;
   margin-bottom: 8px;
   padding: 24px 32px;
   
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  overflow: hidden;
+  
+  transition: height 0.2s ease-out;
 }
 
 .accordion__item:last-child {
@@ -16,6 +20,7 @@
   align-items: center;
   
   list-style-type: none;
+  cursor: pointer;
 }
 
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
@@ -71,7 +76,7 @@
   .accordion_preview .accordion__summary-title{
     font-size: 12px;
   }
-
+  
   .accordion_preview .accordion__content {
     font-size: 12px;
   }
