@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <div class="burger-menu">
+      <div class="burger-menu__close">
+        <svg class="burger-menu__cross">
+          <use href="../../assets/images/icons.svg#cross" />
+        </svg>
+      </div>
+      <div class="burger-menu__header">
+        <svg class="burger-menu__logo-icon">
+          <use href="../../assets/images/icons.svg#logo-icon" />
+        </svg>
+      </div>
+      <div class="burger-menu__toggler-wrapper">
+        <div class="burger-menu__toggler">
+          <div class="burger-menu__toggler-title">Dark Mode</div>
+          <label class="toggler">
+            <input class="toggler__checkbox" type="checkbox">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <span class="toggler__switch"></span>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="burger-menu__body">
+        <div class="sidebar sidebar_burger-menu">
+          <div class="sidebar__body">
+            <div class="sidebar__content">
+              <h4 class="sidebar__title">Elements</h4>
+              <div class="sidebar__menu">
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Tooltip</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Avatar</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Buttons</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Custom form elements</a>
+                </h5>
+              </div>
+            </div>
+            <div class="sidebar__content">
+              <h4 class="sidebar__title">Containers</h4>
+              <div class="sidebar__menu">
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Calendar</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Accordion</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Input</a>
+                </h5>
+              </div>
+            </div>
+            <div class="sidebar__content">
+              <h4 class="sidebar__title">Templates</h4>
+              <div class="sidebar__menu">
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Modal</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Histogram</a>
+                </h5>
+                <h5 class="sidebar__item">
+                  <a class="sidebar__item-link" href="#0">Skeleton</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <h5 class="sidebar__item">
+            <a class="sidebar__item-link" href="#0">Main page</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
