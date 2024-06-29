@@ -24,7 +24,10 @@
   flex-shrink: 0;
   
   border-radius: 50%;
-  background-color: var(--grey-2);
+  background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+  background-size: 200%;
+  
+  animation: backgroundMovement 1.5s linear infinite forwards;
 }
 
 .skeleton__ellipse_dimensions {
@@ -41,7 +44,21 @@
 
 .skeleton__line {
   height: 20px;
+  
   background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+  background-size: 200%;
+  
+  animation: backgroundMovement 1.5s linear infinite forwards;
+}
+
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+  
+  100% {
+    background-position: -100%;
+  }
 }
 
 .skeleton__line_short {
@@ -60,11 +77,11 @@
   .skeleton_preview {
     padding: 16px;
   }
-
+  
   .skeleton_preview .skeleton__line {
     height: 10px;
   }
-
+  
   .skeleton_preview .skeleton__ellipse_dimensions {
     width: 32px;
     height: 32px;

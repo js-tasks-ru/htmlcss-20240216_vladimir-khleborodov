@@ -46,6 +46,12 @@
   
   color: var(--grey-3);
   cursor: pointer;
+  
+  transition: color 250ms ease-in-out;;
+}
+
+.tabs__label:hover {
+  color: var(--black);
 }
 
 .tabs_template .tabs__label {
@@ -62,6 +68,29 @@
   height: 5px;
   
   background-color: transparent;
+  
+  transform: scaleX(0);
+  transition: all 250ms ease-in-out;
+}
+
+.tabs__radio[id="all-tab"]:hover ~ .tabs__nav .tabs__label[for="all-tab"],
+.tabs__radio[id="elements-tab"]:hover ~ .tabs__nav .tabs__label[for="elements-tab"],
+.tabs__radio[id="containers-tab"]:hover ~ .tabs__nav .tabs__label[for="containers-tab"],
+.tabs__radio[id="templates-tab"]:hover ~ .tabs__nav .tabs__label[for="templates-tab"],
+.tabs__radio[id="html-tab"]:hover ~ .tabs__nav .tabs__label[for="html-tab"],
+.tabs__radio[id="css-tab"]:hover ~ .tabs__nav .tabs__label[for="css-tab"] {
+  color: var(--black);
+}
+
+.tabs__radio[id="all-tab"]:hover ~ .tabs__nav .tabs__label[for="all-tab"]::after,
+.tabs__radio[id="elements-tab"]:hover ~ .tabs__nav .tabs__label[for="elements-tab"]::after,
+.tabs__radio[id="containers-tab"]:hover ~ .tabs__nav .tabs__label[for="containers-tab"]::after,
+.tabs__radio[id="templates-tab"]:hover ~ .tabs__nav .tabs__label[for="templates-tab"]::after,
+.tabs__radio[id="html-tab"]:hover ~ .tabs__nav .tabs__label[for="html-tab"]::after,
+.tabs__radio[id="css-tab"]:hover ~ .tabs__nav .tabs__label[for="css-tab"]::after {
+  background-color: var(--black);
+  
+  transform: scaleX(1);
 }
 
 .tabs__radio[id="all-tab"]:checked ~ .tabs__nav .tabs__label[for="all-tab"],
@@ -80,6 +109,8 @@
 .tabs__radio[id="html-tab"]:checked ~ .tabs__nav .tabs__label[for="html-tab"]::after,
 .tabs__radio[id="css-tab"]:checked ~ .tabs__nav .tabs__label[for="css-tab"]::after {
   background-color: var(--black);
+  
+  transform: scaleX(1);
 }
 
 .tabs__line {
