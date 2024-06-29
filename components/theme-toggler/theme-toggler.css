@@ -17,3 +17,9 @@
   
   color: var(--grey-3);
 }
+
+@media screen and (max-width: 620px) {
+  .theme-toggler {
+    gap: 6px;
+  }
+}
